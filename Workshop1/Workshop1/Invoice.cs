@@ -30,9 +30,9 @@ public class Invoice : IPay
     {
         return $"\nRECEIPT" +
             $"\n------------------------------------" +
-            $"\n {string.Join("\n", _products)}" +
-            $"\n               ==================" +
-            $"\nTOTAL {ValueToPay():C2}";
+            $"\n\t {string.Join("\n", _products)}" +
+            $"\n\t                     ==================" +
+            $"\n\t TOTAL..............: {$"{ValueToPay():C2}",18}";
 
     }
 }

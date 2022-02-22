@@ -9,15 +9,21 @@
 
         public override string ToString()
         {
-            string product = " ";
+            List<string> product = new List<string>();
+
             foreach (Products Products in Products)
             {
-                product += Products.Description + ", ";
+                string.Join("\n", product);
             }
-            return $"\n{Id} - {Description}"+
-                $"\n Products: {product}" +
-                $"\n Discount: {Discount:P2}" +
-                $"\n Value to pay is: {ValueToPay():C2}";
+            //string product = " ";
+            //foreach (Products Products in Products)
+            //{
+            //  product += Products.Description + ", ";
+            //}
+            return $"\n{Id} - {Description}" +
+                $"\n\t Products:.........: {product}" +
+                $"\n\t Discount:.........: {$"{Discount:P2}",18}" +
+                $"\n\t Value to pay is:..: {$"{ValueToPay():C2}",18}"; 
         }
 
         public override decimal ValueToPay()

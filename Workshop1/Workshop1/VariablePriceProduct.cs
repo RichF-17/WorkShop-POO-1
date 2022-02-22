@@ -6,9 +6,10 @@
         public float Quantity { get; set; }
         public override string ToString()
         {
-            return base.ToString() + $" Mesurement:....... {Measurement}" +
-                                     $"\n Quantity is:...... {Quantity:F2}" +
-                                     $"\n Value to pay is: ..... {ValueToPay():C2}";
+            return base.ToString() + $"\n\t Mesurement:.......: {$"{Measurement}",18}" +
+                                     $"\n\t Quantity is:......: {$"{Quantity:F2}",18}" +
+                                     $"\n\t Price to value:...: {$"{Price:C2}",18}";
+                                     
 
         }
 

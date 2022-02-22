@@ -4,7 +4,7 @@
     {
         public override string ToString()
         {
-            return base.ToString() + $" Value to pay is: {ValueToPay():C2}";
+            return base.ToString() + $"\n\t Value to pay is...: {$"{ValueToPay():C2}",18}";
         }
         public override decimal ValueToPay()
         {
