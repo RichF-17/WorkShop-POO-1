@@ -14,7 +14,7 @@
             {
                 product += Products.Description + ", ";
             }
-            return $"\n{Id} - {Description}" +
+            return $"\n{Id} - {Description}"+
                 $"\n Products: {product}" +
                 $"\n Discount: {Discount:P2}" +
                 $"\n Value to pay is: {ValueToPay():C2}";
