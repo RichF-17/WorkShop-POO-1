@@ -13,7 +13,7 @@
         {
             return $"\n{Id} - {Description}" +
                 $"\n\t Price to value:...: {$"{Price:C2}",18}" +
-                $"\n\t Tax is:...........: {$"{Tax:C2}",18}";
+                $"\n\t Tax is:...........: {$"{Tax:P2}",18}";
         }
     }
 }

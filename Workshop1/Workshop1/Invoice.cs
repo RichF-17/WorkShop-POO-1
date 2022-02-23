@@ -32,7 +32,7 @@ public class Invoice : IPay
             $"\n------------------------------------" +
             $"\n\t {string.Join("\n", _products)}" +
             $"\n\t                     ==================" +
-            $"\n\t TOTAL..............: {$"{ValueToPay():C2}",18}";
+            $"\n\t TOTAL.............: {$"{ValueToPay():C2}",18}";
 
     }
 }

@@ -43,16 +43,13 @@ Products product5 = new ComposedProduct()
     Products = new List<Products>() { product1, product2, product3, product4 }
 
 };
-Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine(product1);
 Console.WriteLine(product2);
 Console.WriteLine(product3);
 Console.WriteLine(product4);
 Console.WriteLine(product5);
-Console.ForegroundColor = ConsoleColor.Cyan;
 
 Invoice invoice = new Invoice();
-Console.ForegroundColor = ConsoleColor.Yellow;
 invoice.AddProduct(product1);
 invoice.AddProduct(product3);
 invoice.AddProduct(product5);

@@ -8,7 +8,7 @@
         {
             return base.ToString() + $"\n\t Mesurement:.......: {$"{Measurement}",18}" +
                                      $"\n\t Quantity is:......: {$"{Quantity:F2}",18}" +
-                                     $"\n\t Price to value:...: {$"{Price:C2}",18}";
+                                     $"\n\t Price to value:...: {$"{ValueToPay():C2}",18}";
                                      
 
         }
